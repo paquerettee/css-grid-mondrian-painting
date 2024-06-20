@@ -1,0 +1,118 @@
+/* colors:
+black: rgb(32, 24, 35) 
+gray: rgb(177, 182, 188)
+white: rgb(230, 228, 229) 
+yellow: rgb(242, 191, 12)
+red: rgb(211, 56, 26)
+blue: rgb(45, 57, 133) */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div.flex-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  padding: 50px 0 0 0;
+}
+
+div.composition_a {
+  width: 1260px;
+  height: 1260px;
+  display: grid;
+  grid-template-rows: 80px 120px 90px 250px 200px 190px 80px 90px 80px;
+  grid-template-columns: 80px 150px 220px 300px 290px 80px 80px;
+  gap: 10px;
+  background-color: black;
+  box-shadow: 0 0 16px 8px #aaaaaa;
+}
+
+/* defining colors */
+div.black {
+  background-color: rgb(32, 24, 35);
+}
+div.gray {
+  background-color: rgb(177, 182, 188);
+}
+div.white {
+  background-color: rgb(230, 228, 229);
+}
+div.yellow {
+  background-color: rgb(242, 191, 12);
+}
+div.red {
+  background-color: rgb(211, 56, 26);
+}
+div.blue {
+  background-color: rgb(45, 57, 133);
+}
+
+/* defining areas */
+div.composition_a div:nth-child(1) {
+  grid-row: span 3;
+}
+div.composition_a div:nth-child(2) {
+  grid-column: span 2;
+}
+div.composition_a div:nth-child(3) {
+  grid-row: span 2;
+}
+div.composition_a div:nth-child(4) {
+  grid-row: span 2;
+}
+div.composition_a div:nth-child(5) {
+  grid-area: 1 / 6 / 4 / 8;
+}
+div.composition_a div:nth-child(6) {
+  grid-row: span 2;
+}
+div.composition_a div:nth-child(7) {
+  grid-row: span 2;
+}
+div.composition_a div:nth-child(10) {
+  grid-row: span 2;
+}
+div.composition_a div:nth-child(11) {
+  grid-column: span 2;
+}
+div.composition_a div:nth-child(14) {
+  grid-row: span 3;
+}
+div.composition_a div:nth-child(15) {
+  grid-row: span 3;
+}
+div.composition_a div:nth-child(16) {
+  grid-column: span 2;
+}
+div.composition_a div:nth-child(18) {
+  grid-row: span 2;
+}
+div.composition_a div:nth-child(19) {
+  grid-area: 6 / 1 / 8 / 3;
+}
+div.composition_a div:nth-child(20) {
+  grid-row: span 3;
+}
+div.composition_a div:nth-child(22) {
+  grid-row: span 2;
+}
+div.composition_a div:nth-child(23) {
+  grid-row: span 2;
+}
+div.composition_a div:nth-child(24) {
+  grid-area: 7 / 6 / 10 / 8;
+}
+div.composition_a div:nth-child(25) {
+  grid-area: 8 / 1 / 10 / 3;
+}
+div.composition_a div:nth-child(26) {
+  grid-column: span 2;
+}
